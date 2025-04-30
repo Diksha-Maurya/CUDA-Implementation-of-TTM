@@ -41,3 +41,11 @@ g++ -fopenmp -O2 -o openmp OpenMP.cpp
 - Diksha Maurya  
 *(North Carolina State University)*
 
+## 📊 Performance Comparison
+
+The chart below compares the execution time of different TTM Mode-1 implementations on a tensor of shape (256 × 512 × 512) and matrix (256 × 512). The tiling-optimized CUDA version significantly outperformed all others, completing in 343.221 ms, compared to 540.000 ms for the naive CUDA version. The MPI and OpenMP implementations were considerably slower, taking 1611.340 ms and 1811.380 ms, respectively. These results demonstrate the effectiveness of GPU acceleration, especially with shared memory and memory coalescing optimizations.
+
+
+![ttm_time_comparison](https://github.com/user-attachments/assets/5b48ebb6-c940-4e41-a387-6a2b76236a09)
+
+
