@@ -19,7 +19,7 @@ nvcc -O3 -o ttm_optimized TTM_optimized.cu
 ./ttm_optimized
 ```
 
-#### 🔹 CUDA Implementation
+#### 🔹 CUDA Implementation (Naive)
 ```bash
 nvcc -O2 -o cuda1 Cuda.cu
 ./cuda1
