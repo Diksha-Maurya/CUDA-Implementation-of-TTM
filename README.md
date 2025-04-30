@@ -13,6 +13,12 @@ Ensure you have:
 
 ### 🚀 Compile & Run
 
+#### 🔹 CUDA Implementation (Tiling Optimized)
+```bash
+nvcc -O3 -o ttm_optimized TTM_optimized.cu
+./ttm_optimized
+```
+
 #### 🔹 CUDA Implementation
 ```bash
 nvcc -O2 -o cuda1 Cuda.cu
